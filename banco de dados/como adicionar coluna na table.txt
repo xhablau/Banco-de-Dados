@@ -1,0 +1,16 @@
+ALTER TABLE jhi_user
+	ADD porc_maior_saque_matriz BOOLEAN,
+	ADD	porc_menor_saque_matriz BOOLEAN,
+	ADD porc_maior_venda_matriz BOOLEAN,
+	ADD	porc_menor_venda_matriz BOOLEAN,
+	ADD porc_maior_parcelado_matriz BOOLEAN,
+	ADD	porc_menor_parcelado_matriz BOOLEAN,
+	ADD valor_saque_matriz VARCHAR (20),
+	ADD valor_venda_matriz VARCHAR (20),
+	ADD valor_parcelado_matriz VARCHAR (20),
+	ADD	taxa_menor_venda_matriz VARCHAR (20),
+	ADD	taxa_maior_venda_matriz VARCHAR (20),
+	ADD	taxa_menor_saque_matriz VARCHAR (20),
+	ADD	taxa_maior_saque_matriz VARCHAR (20),
+	ADD	taxa_menor_parcelado_matriz VARCHAR (20),
+	ADD	taxa_maior_parcelado_matriz VARCHAR (20)
