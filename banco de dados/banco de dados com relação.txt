@@ -28,7 +28,7 @@ CREATE TABLE users_matriz(
 );
 CREATE TABLE users_filial(
     id INT UNIQUE NOT NULL,
-    cod_matriz_filial INT UNIQUE REFERENCES users_matriz (id) NOT NULL,    
+    cod_matriz_filial INT REFERENCES users_matriz (id) NOT NULL,    
     login_filial VARCHAR (60) NOT NULL,
     senha_filial VARCHAR (60) NOT NULL,
     nome_filial VARCHAR (50) NOT NULL,
