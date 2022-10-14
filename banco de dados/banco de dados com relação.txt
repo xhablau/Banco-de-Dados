@@ -61,7 +61,7 @@ CREATE TABLE users_filial(
 	taxa_maior_saque_filial VARCHAR (20) NOT NULL,
 	taxa_menor_parcelado_filial VARCHAR (20) NOT NULL,
 	taxa_maior_parcelado_filial VARCHAR (20) NOT NULL,
-    PRIMARY KEY (id, cod_matriz_filial,login_filial, cnpj_filial), UNIQUE (id,cod_matriz_filial,login_filial,cnpj_filial)
+    PRIMARY KEY (id, login_filial), UNIQUE (id,login_filial)
 );
 CREATE TABLE users_operador(
     id INT UNIQUE NOT NULL ,
@@ -86,5 +86,5 @@ CREATE TABLE users_operador(
 	taxa_maior_saque_operador VARCHAR (20) NOT NULL,
 	taxa_menor_parcelado_operador VARCHAR (20) NOT NULL,
 	taxa_maior_parcelado_operador VARCHAR (20) NOT NULL,
-    PRIMARY KEY (id, login_operador, cod_matriz_operador, cod_filial_operador), UNIQUE (id,login_operador)
+    PRIMARY KEY (id, login_operador), UNIQUE (id,login_operador)
     );
